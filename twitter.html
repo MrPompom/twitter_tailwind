@@ -13,64 +13,188 @@
 </head>
 
 
-<body class="flex bg-gray-900">
-    <left class="flex flex-col justify-start absolute left-0 w-3/12 h-full border-white-200 text-white space-y-4 justify-text">
-        <a href="#" class="hover:text-blue-400">Home</a>
-        <a href="#" class="hover:text-blue-400">Explore</a>
-        <a href="#" class="hover:text-blue-400">Notification</a>
-        <a href="#" class="hover:text-blue-400">Message</a>
-        <a href="#" class="hover:text-blue-400">Bookmarks</a>
-        <a href="#" class="hover:text-blue-400">List</a>
-        <a href="#" class="hover:text-blue-400">Profile</a>
-        <a href="#" class="hover:text-blue-400">More</a>
-        <input type="submit" value="Tweet" class="hover:bg-blue-500 bg-blue-200 px-6 py-3 rounded-full"/>
-    </left>
+<body class="flex bg-white">
+    <!--left-->
+    <section class="justify-start w-3/12 h-full  border-r border-grey-200">
+        <div class="flex flex-col text-black space-y-10 text-1xl font-bold justify-around ml-20 pl-20 mt-5">
+            <div>
+                <i class="fab fa-twitter text-4xl text-blue-400 rounded-full hover:bg-gray-100"></i>
+             </div>
+            <div class=" flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                <i class="fas fa-home text-2xl"></i>
+                <a href="#" class="ml-4">Accueil</a>
+            </div>
+            <div class="flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                 <i class="fas fa-hashtag text-2xl"></i>
+                <a href="#" class="ml-4">Explorer</a>
+            </div>
+            <div class="flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                <i class="far fa-bell text-2xl"></i>
+                <a href="#" class="ml-4">Notifications</a>
+            </div>
+            <div class="flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                <i class="far fa-envelope text-2xl"></i>
+                <a href="#" class="ml-4">Messages</a>
+            </div>
+            <div class="flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                <i class="far fa-bookmark text-2xl"></i>
+                <a href="#" class="ml-4">Signets</a>
+            </div>
+            <div class="flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                <i class="far fa-list-alt text-2xl"></i>
+                <a href="#" class="ml-4">Listes</a>
+            </div>
+            <div class="flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                <i class="far fa-user text-2xl"></i>
+                <a href="#" class="ml-4">Profil</a>
+            </div>
+                <div class="flex hover:text-blue-400 rounded-full hover:bg-blue-100">
+                    <i class="fas fa-ellipsis-h text-2xl"></i>
+                    <a href="#" class="ml-4">Plus</a>
+                </div>
+            <input type="submit" value="Tweeter" class="hover:bg-blue-600 bg-blue-500 text-white font-bold w-5/6 px-10 py-3 rounded-full w-1/2"/>
+        </div>
+    </section>
 
-    <mid class="flex justify-center border-white-200 w-3/12 h-full">
+    <!--middle-->
+    <section class="flex  flex-col justify-center w-6/12 h-full text-black">
+        <div class="pt-4 w-full border-b border-gray-200 pb-2">
+            <a href="#" class="text-xl ml-6 font-bold">Accueil</a>
+        </div>
+        <!--quoi de neuf-->
+        <div class="flex flex-col ml-5 mt-5 pb-5 border-b border-gray-200">
+            <div class="flex mb-4">
+                <i class="far fa-smile text-3xl mt-2 ml-2"></i>
+                <input type="Text" value="Quoi de neuf ?" class="outline-none w-full rounded-lg text-gray-500 ml-5 mt-3 text-1xl"/>
+             </div>
 
-    </mid>
+             <div class="flex justify-between">
+                <div class="flex ml-12 text-blue-500 space-x-5 mt-2 text-2xl">
+                    <i class="far fa-image ml-3"></i>
+                    <i class="fas fa-gift "></i>
+                    <i class="far fa-question-circle"></i>
+                    <i class="far fa-smile "></i>
+                    <i class="far fa-calendar-check"></i>
+                </div>
+                <input type="submit" value="Tweeter" class="text-white font-bold hover:bg-blue-600 bg-blue-500 px-6 py-3 mr-10 rounded-full"/>
+             </div>
+        </div>
+        <!--post 1-->
+        <div class="ml-5 mt-3 border-b border-gray-200">
+            <div class="flex justify-between">
+                <div class="flex mb-3">
+                    <i class="far fa-smile text-3xl ml-2"></i>
+                    <a href="#" class="hover:underline ml-4 text-black font-bold">DOFUS</a>
+                    <a href="#" class="ml-2 text-gray-600">@DOFUSfr</a>
+                    <a href="#" class="hover:underline ml-2 text-gray-600">6h</a>
+                </div>
+                <i class=" mr-5 fas fa-ellipsis-h text-1xl text-gray-500"></i>
+            </div>
+            <div>
+                <p class="ml-10 pl-3 justify-text text-left">
+                    La maintenance hebdomadaire #DOFUS est désormais terminée.
+                </p>
+                <p class="ml-10 pl-3 mb-5">
+                    Merci d'avoir patienté, les serveurs seront accessibles d'une minute à l'autre, bon jeu ! 
+                </p>
+                <img src="https://pbs.twimg.com/media/EsFe33ZW8AAo_4u?format=jpg&name=small"  alt="dofus maintenance" class="w-4/6 ml-10 pl-3 rounded-3xl">
+                <!--emoticone-->
+                <div class="flex text-gray-600">
+                    <div class="flex  mt-4 ml-10 pl-3 hover:text-blue-500">
+                        <div class="hover:bg-blue-200 rounded-full w-8 h-8">
+                            <i class="far fa-comment text-1xl ml-2 mt-2"></i>
+                        </div>
+                        <p class="mt-1">52</p>
+                    </div>
+                    <div class="flex  mt-4 ml-10 pl-10 hover:text-green-500">
+                        <div class="hover:bg-green-200 rounded-full w-8 h-8">
+                            <i class="fas fa-retweet text-1xl ml-2 mt-2"></i>
+                        </div>
+                        <p class="mt-1">1</p>
+                    </div>
+                    <div class="flex  mt-4 ml-10 pl-10 hover:text-red-500">
+                        <div class="hover:bg-red-200 rounded-full w-8 h-8">
+                            <i class="far fa-heart text-1xl ml-2 mt-2"></i>
+                        </div>
+                        <p class="mt-1">59</p>
+                    </div>
+                    <div class="flex  mt-4 ml-10 pl-10 hover:text-blue-500">
+                        <div class="hover:bg-blue-200 rounded-full w-8 h-8">
+                            <i class="fas fa-download text-1xl ml-2 mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <rigth class="flex justify-end absolute rigth-0 w-3/12 h-full">
-        <!--<div class="flex px-4 py-1 border-2 border-gray-200 rounded-full hover:shadow">
+        </div>
+    </section>
+
+    <!--right-->
+    <section class="flex flex-col justify-end w-3/12 h-full text-black px-10 border-l border-grey-200">
+        <!--recherche-->
+        <div class="flex px-4 py-1 bg-gray-200 rounded-full hover:shadow my-5">
 
             <div class="text-gray-500 text-lg">
               <i class="fas fa-search"></i>
             </div>
     
             <div class="w-full px-4">
-              <input type="Text" class="outline-none"/>
+              <input type="Text" value="Recherche Twitter" class="outline-none w-full rounded-lg text-gray-500"/>
             </div>
-        </div-->
+        </div>
 
-        <div class="flex flex-col border bg-gray-700">
-            <a href="#" class="text-white ml-6">Trends For You</a>
-            <div class="hover:bg-blue-300 flex flex-col pt-4">
-                <a href="#" class="text-white">#TonyTonyChopper</a>
-                <a href="#" class="text-grey-400">589.9k Tweets</a>
+        <div class="flex flex-col bg-gray-100 rounded-lg mb-6">
+            <div class="flex border-b border-gray-200">
+            <a href="#" class="text-xl pl-2 m-2 font-bold">Personnes pertinentes</a>
             </div>
-            <div class="hover:bg-blue-300 flex flex-col border-white px-10 py-3">
-                <a href="#" class="text-white">#TheFifthEmperor</a>
-                <a href="#" class="text-grey-400">458k Tweets</a>
+            <div class="hover:bg-gray-200 flex flex-col px-10 py-3  border-b border-gray-200">
+                <a href="#" class="hover:underline font-bold">#TonyTonyChopper</a>
+                <a href="#" class="text-gray-600">589.9k Tweets</a>
             </div>
-            <div class="hover:bg-blue-300 flex flex-col border-white px-10 py-3">
-                <a href="#" class="text-white">#OdaSenseiWeLoveYou</a>
-                <a href="#" class="text-grey-400">324.7k Tweets</a>
+            <div class="hover:bg-gray-200 flex flex-col border-white px-10 py-3 border-b border-gray-200">
+                <a href="#" class="hover:underline font-bold">#TheFifthEmperor</a>
+                <a href="#" class="text-gray-600">458k Tweets</a>
             </div>
-            <div class="hover:bg-blue-300 flex flex-col border-white px-10 py-3">
-                <a href="#" class="text-white">#KaidoVSBigMom</a>
-                <a href="#" class="text-grey-400">65.5k Tweets</a>
-            </div>
-            <div class="hover:bg-blue-300 flex flex-col border-white px-10 py-3">
-                <a href="#" class="text-white">#PreyForGodValley</a>
-                <a href="#" class="text-grey-400">52.7k Tweets</a>
+            <div class="hover:bg-gray-200 flex flex-col border-white px-10 py-3 border-b border-gray-200">
+                <a href="#" class="hover:underline font-bold">#OdaSenseiWeLoveYou</a>
+                <a href="#" class="text-gray-600">324.7k Tweets</a>
             </div>
             <div class="border-white px-10 py-3">
-                <a href="#" class="text-blue-400 hover:text-white">Show more</a>
+                <a href="#" class="text-blue-400 hover:">Show more</a>
                 
             </div>
 
         </div>
-    </rigth>
+        <div class="flex flex-col flex-between border bg-gray-100 rounded-lg mb-4">
+            <div class="flex border-b border-gray-200">
+            <a href="#" class=" pl-2 m-2 text-xl font-bold">Tendances pour vous</a>
+            </div>
+            <div class="hover:bg-gray-200 flex flex-col px-10 py-3 border-b border-gray-200">
+                <a href="#" class="hover:underline">#TonyTonyChopper</a>
+                <a href="#" class="text-gray-600">589.9k Tweets</a>
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+            </div>
+            <div class="hover:bg-gray-200 flex flex-col border-white px-10 py-3 border-b border-gray-200">
+                <a href="#" class="hover:underline">#TheFifthEmperor</a>
+                <a href="#" class="text-gray-600">458k Tweets</a>
+            </div>
+            <div class="hover:bg-gray-200 flex flex-col border-white px-10 py-3 border-b border-gray-200">
+                <a href="#" class="hover:underline">#OdaSenseiWeLoveYou</a>
+                <a href="#" class="text-gray-600">324.7k Tweets</a>
+            </div>
+            <div class="hover:bg-gray-200 flex flex-col border-white px-10 py-3 border-b border-gray-200">
+                <a href="#" class="hover:underline">#KaidoVSBigMom</a>
+                <a href="#" class="text-gray-600">65.5k Tweets</a>
+            </div>
+            <div class="hover:bg-gray-200 flex flex-col border-white px-10 py-3 border-b border-gray-200">
+                <a href="#" class="hover:underline">#PreyForGodValley</a>
+                <a href="#" class="text-gray-600">52.7k Tweets</a>
+            </div>
+            <div class="border-white px-10 py-3">
+                <a href="#" class="text-blue-400 hover:">Show more</a>
+                
+            </div>
+    </section>
 
 </body>
 </html>
